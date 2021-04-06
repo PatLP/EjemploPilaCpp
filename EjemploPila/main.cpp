@@ -6,7 +6,7 @@
 using namespace std;
 
 
-void recorrer(Pila& pila){
+void imprimirPila(Pila& pila){
     while(top(pila)!= NULL){
         cout << "Dato top ->" << top(pila)->dato<< endl;
         pop(pila);
@@ -26,10 +26,10 @@ int main(){
         push(*pila, *dato);
         delete dato;
     }
-
-    cout << "Recorrer Pila" << endl;
     cout << "--------------" <<endl;
-    recorrer(*pila);
+    cout << "Imprimir Pila" << endl;
+    cout << "--------------" <<endl;
+    imprimirPila(*pila);
     cout << "--------------" <<endl;
 
     cout << "\nEliminando Pila" << endl;
