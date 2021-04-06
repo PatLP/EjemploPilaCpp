@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1617676330 source:c:\users\pat\documents\github\ejemplopilacpp\ejemplopila\main.cpp
+	<iostream>
+	<stdlib.h>
+	"Pila.h"
+
+1617676437 c:\users\pat\documents\github\ejemplopilacpp\ejemplopila\pila.h
+
+1617676704 source:c:\users\pat\documents\github\ejemplopilacpp\ejemplopila\pila.cpp
+	"Pila.h"
+
