@@ -16,23 +16,38 @@ void imprimirPila(Pila& pila){
 
 int main(){
     system("Color 0B");
-    cout << "Crear Pila" << endl <<endl;
+    cout << "---------------------------" <<endl;
+    cout << "Crear Pila" << endl ;
+    cout << "---------------------------" <<endl;
+    cout << "Pila *pila = new Pila;" <<endl;
+    cout << "crearPila(*pila);" << endl;
     Pila* pila=new Pila;
     crearPila(*pila);
-    cout << "Agregar elementos a la Pila" << endl <<endl;
+    cout << "---------------------------" <<endl <<endl <<endl;
+
+    cout << "---------------------------" <<endl;
+    cout << "Agregar elementos a la Pila" << endl;
+    cout << "---------------------------" <<endl;
+    cout << "push(*pila, *dato);" <<endl;
     for (int i = 0 ; i < 5; i++){
         Dato* dato = new Dato;
         *dato = i+1;
         push(*pila, *dato);
         delete dato;
     }
-    cout << "--------------" <<endl;
-    cout << "Imprimir Pila" << endl;
-    cout << "--------------" <<endl;
-    imprimirPila(*pila);
-    cout << "--------------" <<endl;
+    cout << "---------------------------" <<endl <<endl <<endl;
 
-    cout << "\nEliminando Pila" << endl;
+    cout << "---------------------------" <<endl;
+    cout << "Imprimir Pila" << endl;
+    cout << "---------------------------" <<endl;
+    imprimirPila(*pila);
+    cout << "---------------------------" <<endl <<endl <<endl;
+
+    cout << "---------------------------" <<endl;
+    cout << "Eliminando Pila"<<endl ;
+    cout << "---------------------------" <<endl;
+    cout << "destruirPila(*pila);" << endl;
+    cout << "---------------------------" <<endl <<endl;
     destruirPila(*pila);
     delete pila;
     return 0;
